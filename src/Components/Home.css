@@ -1,0 +1,118 @@
+.top-content h1 {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  align-items: flex-start;
+  display: flex;
+  font-size: 15px;
+  
+}
+
+.top-content p {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-items: flex-start;
+  display: flex;
+  font-size: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-totall {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 200px;
+}
+
+.inside-grid {
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  color: blueviolet;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.post-job {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 10px;
+  
+}
+
+.add-can {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.jobopen {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* background-color: rgb(166, 208, 194); */
+}
+
+.job-open {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.careers {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.begin {
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.time{
+    display: flex;
+  justify-content: space-between;
+   
+}
+
+.home-grid{
+  display: flex;
+  justify-content: space-between;
+  /* background-color:whitesmoke; */
+   
+}
+.time-grid{
+  margin-left: 50px;
+}
