@@ -1,7 +1,7 @@
 .top-content h1 {
-  font-family:
+  /* font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   font-weight: bolder;
   align-items: flex-start;
   display: flex;
@@ -10,9 +10,9 @@
 }
 
 .top-content p {
-  font-family:
+  /* font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   align-items: flex-start;
   display: flex;
   font-size: 10px;
@@ -30,15 +30,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   height: 200px;
+  background-color: white;
 }
 
 .inside-grid {
   font-weight: bolder;
   display: flex;
   align-items: center;
-  color: blueviolet;
+  color: #2563eb;
   font-size: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 .post-job {
@@ -48,6 +49,7 @@
   border-radius: 2px;
   font-size: 10px;
   margin-top: 10px;
+
   
 }
 
@@ -109,10 +111,10 @@
 
 .home-grid{
   display: flex;
-  justify-content: space-between;
-  /* background-color:whitesmoke; */
-   
+justify-content: space-evenly;  
 }
+
+
 .time-grid{
-  margin-left: 50px;
+  /* background-color:ghostwhite; */
 }

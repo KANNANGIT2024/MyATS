@@ -1,6 +1,7 @@
 .int-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
 }
 
 .int-box {
@@ -12,23 +13,24 @@
   margin-top: 10px;
   margin-right: 10px;
   min-height: 200px;
+    background-color: white;
 }
 
 .int-content h3 {
-  font-family:
+  /* font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   font-weight: bolder;
   align-items: flex-start;
   display: flex;
-  font-size: 12px;
-  color: blueviolet;
+  font-size: 15px;
+  color: #2563eb;
 }
 
 .int-content p {
-  font-family:
+  /* font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   align-items: flex-start;
   display: flex;
   font-size: 10px;
