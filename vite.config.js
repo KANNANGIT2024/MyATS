@@ -10,4 +10,14 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    proxy: {
+      // Anything starting with /api will be forwarded to arbeitnow.com
+      '/api': {
+        target: 'https://arbeitnow.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '/api'), // keep the path same
+      },
+    },
+  },
 })

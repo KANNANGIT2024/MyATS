@@ -1,37 +1,123 @@
+/* ---------- Grid Container ---------- */
 .int-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+  gap: 15px;      
+  background-color: #f9f9f9; 
+  width: 100%;
+  gap: 5px;
 }
 
+/* ---------- Individual Box ---------- */
 .int-box {
   border: 1px solid #ddd;
   padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+  border-radius: 16px;
   font-size: 10px;
   margin-top: 10px;
   margin-right: 10px;
   min-height: 200px;
-    background-color: white;
+  background-color: white;
+  width: 95%;
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.int-content h3 {
-  /* font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
-  font-weight: bolder;
-  align-items: flex-start;
-  display: flex;
-  font-size: 15px;
-  color: #2563eb;
-}
-
-.int-content p {
-  /* font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
-  align-items: flex-start;
-  display: flex;
+.sub-opening{
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
   font-size: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  min-height: 200px;
+  background-color: white;
+  width: 95%;
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.int-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Box Header ---------- */
+.int-content h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: blueviolet;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+    margin: 0;  
+}
+
+/* ---------- Box Description ---------- */
+.int-content p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Rejected Candidate Label ---------- */
+.rejected {
+  color: #555;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* ---------- Candidate Item ---------- */
+.int-content .candidate-item {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  background-color: #fafafa;
+ 
+}
+
+/* ---------- Candidate Name ---------- */
+.candidate-item h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ---------- Candidate Position ---------- */
+.candidate-item p {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.int-icon{
+  display: flex;
+}
+/* ---------- Scrollable Recent Activity ---------- */
+.int-icon {
+  display: flex;
+  align-items: center; /* vertically center icon with text */
+  gap: 8px;           
+}
+
+.int-icon .icon {
+  font-size: 20px;    
+  color: blueviolet;  
+    line-height: 1;  
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .int-grid {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
 }

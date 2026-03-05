@@ -24,10 +24,10 @@ function Clock() {
     <>
       <div className="date-time-card">
       <div className="date-grid">
-        <div>
+        <div className="day">
           <h3>{dayName}</h3>
         </div>
-        <div>
+        <div className="date">
           <p>{currentTime.toLocaleDateString()}</p>
         </div>
       </div>

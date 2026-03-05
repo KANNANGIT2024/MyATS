@@ -90,7 +90,7 @@ function Signup() {
         </div>
 
         <p className="signup-text">
-          Don't have an account? <a href="#">Sign up</a>
+          Don't have an account? <a href="/home">Sign up</a>
         </p>
 
       </div>

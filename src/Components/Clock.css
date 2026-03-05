@@ -1,22 +1,51 @@
-.date-time-card {
-    /* width: 160px; */
-  /* font-family: "Lucida Sans", Geneva, Verdana, sans-serif; */
-    
+
+.date-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
-.date-time-card h3 {
+.day h3{
+  font-weight: lighter;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.time-space p {
   font-size: 10px;
-  font-weight: bolder;
-  color: #4a4a4a;
+  /* font-weight: bold; */
+  margin-top: auto;
+  
+
+
 }
 
-.date-time-card p {
-  color: #555;
-    font-size: 10px;
-}
+ .date{
+    font-weight: lighter;
+  font-size: 15px;
+  font-weight: bold;
+  }
 
-.date-grid{
-    display: flex;
-    gap: 10px;
-}
 
+/* Mobile */
+@media (max-width: 768px) {
+
+  .date-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .date-time-card h3 {
+    font-size: 16px;
+  }
+
+  .date-time-card p {
+    font-size: 13px;
+  }
+
+  .time-space p {
+    font-size: 14px;
+  }
+}

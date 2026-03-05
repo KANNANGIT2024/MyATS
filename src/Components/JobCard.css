@@ -1,0 +1,159 @@
+.job-card {
+  background: #eef1f6;
+  border-radius: 24px;
+  padding: 28px;
+  max-width: 650px;
+  font-family: "Inter", sans-serif;
+  color: #2d3748;
+  /* text-align: center; */
+}
+
+.jobcard-main{
+    display: flex;
+    justify-content: space-between;
+}
+.jobcard-button {
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  transition: 0.3s;
+  padding: 0 24px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.jobcard-button:hover {
+  opacity: 0.9;
+}
+
+.jobcard-button:hover {
+  opacity: 0.9;
+}
+/* 
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  background: #f3f4f6;
+} */
+/* ---------- Header ---------- */
+.job-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* ---------- Description ---------- */
+.job-description {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* ---------- Info Section ---------- */
+.job-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* ---------- Skills Section ---------- */
+.skills-section {
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Required Skills - Purple */
+.skill-tags.purple span {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+/* Preferred Skills - Green */
+.skill-tags.green span {
+  background: #d1fae5;
+  color: #047857;
+}
+
+/* + more tag */
+.more {
+  background: #e5e7eb !important;
+  color: #374151 !important;
+}
+
+/* ---------- Footer ---------- */
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid #d1d5db;
+}
+
+.left-action span {
+  font-weight: 500;
+  cursor: pointer;
+  color: #374151;
+}
+
+.right-actions .action span {
+  font-weight: 500;
+  cursor: pointer;
+  color: #374151;
+}
+
+/* Optional Hover Effects */
+.left-action span:hover,
+.right-actions .action span:hover {
+  color: #6d28d9;
+  transition: 0.2s ease;
+}

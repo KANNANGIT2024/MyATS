@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    { "id": 4, "title": "QA Engineer", "status": "offered" },
+    { "id": 5, "title": "DevOps Engineer", "status": "open" },
+    { "id": 6, "title": "UI Designer", "status": "offered" },
+    { "id": 7, "title": "Product Manager", "status": "offered" },
+    { "id": 8, "title": "HR Executive", "status": "offered" },
+     { "id": 9, "title": "HR Executive", "status": "offered" }
+  ],
+
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Arun",
+      "position": "Frontend Developer",
+      "status": "Rejected"
+    },
+    {
+      "id": 2,
+      "name": "Kumar",
+      "position": "Backend Developer",
+      "status": "Rejected"
+    }
+  ]
+}
