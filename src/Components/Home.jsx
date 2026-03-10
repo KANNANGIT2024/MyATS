@@ -478,16 +478,23 @@ function Home() {
 
               <div className="job-open">
                 <div className="careers">
-                  <p>From Careers page: {applications.webBased}</p>
+                  <p>From Careers page </p>
+                   <span className="open-count">{applications.webBased}</span>
                 </div>
                 <div className="careerss">
-                  <p>From Careers Mail: {applications.mailBased}</p>
+                  <p>From Careers Mail</p>
+                    <span className="open-offered">{applications.mailBased}</span>
                 </div>
+              
               </div>
+               <div className="job-opens">
+                  <div className="begins">
+                <p>From Kadit Begin </p>
+                  <span className="open-count">{applications.internal}</span>
+              </div>
+               </div>
 
-              <div className="begin">
-                <p>From KAdit Begin: {applications.internal}</p>
-              </div>
+             
             </div>
           </div>
         </div>

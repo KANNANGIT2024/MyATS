@@ -1,4 +1,4 @@
-/* ===== Base Styles ===== */
+
 .top-content h1 {
   font-weight: 500;
   font-size: 26px;
@@ -50,6 +50,7 @@
   margin-top: 12px;
   background: #f8fafc;
   cursor: pointer;
+  text-align: center;
 }
 
 /* Job cards */
@@ -59,14 +60,19 @@
 .jobopen4,
 .careers,
 .careerss,
-.begin {
+.begins {
  border: 1px solid #e2e8f0;
-  padding: 14px;
+  /* padding: 14px; */
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 14px; 
   font-weight: 500;
   margin-top: 12px;
+  text-align: center;
+
 }
+
+
+
 
 .jobopen { background-color: rgba(158, 200, 169, 0.368); cursor: pointer;}
 .jobopen2 { background-color: rgba(208, 176, 176, 0.28); cursor: pointer; }
@@ -74,7 +80,7 @@
 .jobopen4 { background-color: rgba(194, 161, 225, 0.381);cursor: pointer; }
 .careers { background-color: rgb(197, 216, 223); cursor: pointer;}
 .careerss { background-color: rgb(214, 201, 226); cursor: pointer;}
-.begin { background-color: rgb(221, 238, 221); text-align: center; cursor: pointer;}
+.begins{ background-color: rgb(221, 238, 221); text-align: center; cursor: pointer;}
 
 /* Grid inside cards */
 .content-grid,
@@ -82,6 +88,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+.job-opens{
   font-size: 14px;
   color: #6b7280;
   font-weight: 500;
@@ -105,54 +116,109 @@ background:white;
 }
 
 .grid-content h3 {
-  font-weight: 500;
+ font-weight: 600;
   font-size: 16px;
-  color: blueviolet;
+  color: #4c1d95;
   
 }
 
 .grid-content h3 svg {
-  color: #7c3aed;
+  color: #4c1d95;
   margin-right: 6px;
+}
+
+.sub-circle{
+  text-align: center;
 }
 
 /* Status colors */
 .open-count { color: green; font-weight: 600; }
-.closed-count { color: red; font-weight: 600; }
+.closed-count { color: rgba(255, 0, 0, 0.678); font-weight: 600; }
 .hold-count { color: blue; font-weight: 600; }
-.offered-count { color: blueviolet; font-weight: 600; }
 
-/* ===== Responsive: Tablet (≤1024px) ===== */
-@media (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+* {
+  box-sizing: border-box;
 }
 
-/* ===== Responsive: Mobile (≤768px) ===== */
+body, html {
+  overflow-x: hidden;
+}
+
+
 @media (max-width: 768px) {
+  /* Main time/grid layout */
   .time {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .top-content h1 { font-size: 20px; }
-  .top-content p { font-size: 12px; }
+  .home-grid {
+    flex-direction: column;
+  }
 
-  .grid-container { grid-template-columns: 1fr; }
+  .nav-grit {
+    width: 100%; /* Sidebar full width on mobile */
+  }
+
+  .time-grid {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Grid containers */
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 12px;
+  }
+
   .content-grid,
-  .job-open { grid-template-columns: 1fr; }
+  .job-open {
+    grid-template-columns: 1fr; /* Single column for inner content */
+    gap: 10px;
+  }
 
-  .home-grid { flex-direction: column; }
-
-  .nav-grit,
-  .time-grid,
+  /* Cards/buttons full width */
   .post-job,
   .add-can,
   .jobopen,
+  .jobopen2,
+  .jobopen3,
+  .jobopen4,
   .careers,
-  .begin {
+  .careerss,
+  .begins,
+  .grid-totall {
     width: 100%;
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  /* Top content font adjustments */
+  .top-content h1 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .top-content p {
+    font-size: 12px;
+  }
+
+  /* Circle stats adjustment */
+  .circle-content ul {
+    grid-template-columns: 1fr 1fr; /* two per row on mobile */
+    gap: 10px;
+  }
+
+  .circle-content li {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+  }
+
+  /* Grid-content headings */
+  .grid-content h3 {
+    font-size: 14px;
   }
 }

@@ -239,7 +239,9 @@ function Interviewstatus() {
               </div>
             ))
           ) : (
-            <p>No upcoming interviews</p>
+            <div className="empty-message">
+              <p>No recent activity</p>
+            </div>
           )}
         </div>
       </div>

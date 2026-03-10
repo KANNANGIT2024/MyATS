@@ -12,6 +12,9 @@ import "./Nav.css";
 function Nav() {
   return (
     <div className="nav-icon">
+      <div className="nav-head">
+        <h2>Kadit</h2>
+      </div>
       <div className="nav-contaent">
         <FontAwesomeIcon icon={faTableCellsLarge} />
         <p>Catagerious</p>

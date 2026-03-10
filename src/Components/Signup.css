@@ -115,52 +115,79 @@ input:focus {
 
 /* .signup-text a:hover {
   text-decoration: underline;
-} */
-
+} *//* Sub-grid layout for mobile */
 @media (max-width: 768px) {
-
-  .login-container {
-    padding: 20px;
-    height: auto;              /* Prevent overflow issues */
-  }
-
-  .login-card {
-    width: 100%;               /* Full width */
-    padding: 25px;
-    border-radius: 18px;
-  }
-
-  .login-card h1 {
-    font-size: 24px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-
-  input {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  .signin-btn {
-    font-size: 16px;
-    padding: 12px;
-  }
-
-  .social-buttons {
-    flex-direction: column;    /* Stack buttons */
-    gap: 10px;
-  }
-
-  .social-btn {
-    font-size: 14px;
+  .sub-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 10px;
   }
 
-  .signup-text {
-    font-size: 14px;
+  .sub-box,
+  .sub-opening {
+    width: 100%;
   }
 
+  /* Interview Pipeline */
+  .int-calendar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .int-calsize {
+    width: 100%;
+  }
+
+  /* Circle component */
+  .sub-circle {
+    margin: 15px 0;
+  }
+
+  /* Current Job Opening Cards */
+  .job-card {
+    width: 100%;               /* Ensure full width */
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .job-card h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .job-card p {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .job-card ul {
+    padding-left: 0;
+    list-style: none;
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for stats */
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .job-card li {
+    background-color: rgba(74, 144, 226, 0.1);
+    padding: 6px 8px;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
+  .view-more {
+    font-size: 13px;
+    color: #2563eb;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: 600;
+  }
 }

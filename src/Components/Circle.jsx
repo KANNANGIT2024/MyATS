@@ -28,7 +28,7 @@
 // }
 
 import React, { useEffect, useState } from 'react';
-
+import './Circle.css'
 function Circle() {
   const [value, setValue] = useState({
     applied: 0,
@@ -52,12 +52,21 @@ function Circle() {
   }, []);
 
   return (
-    <div>
-      <h3>Applied: {value.applied}</h3>
-      <h3>HrScreening: {value.hrScreening}</h3>
-      <h3>Pmi: {value.pmi}</h3>
-      <h3>Rejected: {value.rejected}</h3>
-    </div>
+    // <div>
+    //   <h3>Applied: {value.applied}</h3>
+    //   <h3>HrScreening: {value.hrScreening}</h3>
+    //   <h3>Pmi: {value.pmi}</h3>
+    //   <h3>Rejected: {value.rejected}</h3>
+    // </div>
+<div className='circle-content'>
+  <ul>
+     <li>Applied: {value.applied}</li>
+     <li>HrScreening: {value.hrScreening}</li>
+     <li>Pmi: {value.pmi}</li>
+     <li>Rejected: {value.rejected}</li>
+    </ul>
+</div>
+  
   );
 }
 

@@ -30,7 +30,7 @@ export function CalendarDemo() {
         variant="h6"
         fontWeight={500}
         fontSize={12}
-        sx={{ whiteSpace: "nowrap" }}
+        sx={{ whiteSpace: "nowrap"  }}
       >
         {date.format("MMMM YYYY")}
       </Typography>

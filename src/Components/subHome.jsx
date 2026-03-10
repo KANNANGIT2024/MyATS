@@ -7,9 +7,10 @@ import { CalendarDemo } from "./Calendar";
 function SubHome() {
   const [openning, setOpenning] = useState([]);
 
+    const [expandedIndex, setExpandedIndex] = useState(null);
   useEffect(() => {
     fetch(
-      "https://dashboard-data.manakkavoosiva-b.workers.dev/api/jobs-with-applications"
+      "https://dashboard-data.manakkavoosiva-b.workers.dev/api/jobs-with-applications",
     )
       .then((res) => res.json())
       .then((response) => {
@@ -17,6 +18,10 @@ function SubHome() {
       })
       .catch((err) => console.error(err));
   }, []);
+    const toggleStages = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
 
   return (
     <div className="sub-grid">
@@ -62,8 +67,23 @@ function SubHome() {
                   <li>HR Screening: {openJob.candidates.hrScreening}</li>
                   <li>BTI: {openJob.candidates.bti}</li>
                   <li>TI: {openJob.candidates.ti}</li>
-               
+                    {expandedIndex === index && (
+                    <>
+                      <li>PMI: {openJob.candidates.pmi}</li>
+                      <li>Selected: {openJob.candidates.selected}</li>
+                      <li>Onhold: {openJob.candidates.onhold}</li>
+                      <li>Rejected: {openJob.candidates.rejected}</li>
+                    </>
+                  )}
                 </ul>
+                  <p
+                  className="view-more"
+                  onClick={() => toggleStages(index)}
+                >
+                  {expandedIndex === index
+                    ? "View Less Stages"
+                    : "View More Stages"}
+                </p>
               </div>
             ))}
           </div>
@@ -74,3 +94,6 @@ function SubHome() {
 }
 
 export default SubHome;
+
+
+
